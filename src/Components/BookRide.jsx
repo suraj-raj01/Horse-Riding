@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-const Horses = () => {
+const BookRide = () => {
     function show()
     {
         let d = document.getElementById('bookride');
@@ -112,4 +112,4 @@ const Horses = () => {
         </>
     )
 }
-export default Horses;
+export default BookRide;

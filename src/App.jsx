@@ -1,22 +1,22 @@
-import NavBar from "./Components/NavBar";
+
 import Hero from "./Components/Hero";
-import Horses from "./Components/Horses";
 import BookingForm from "./Components/BookingForm";
-import Container from "react-bootstrap/esm/Container";
-import Footer from "./Components/Footer";
-import Contact from "./Components/Contact";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Layout from "./Components/Layout";
+import BookRide from "./Components/BookRide";
 const App = () =>{
   return(
     <>
-    <NavBar/>
-    <br/>
-    <Hero/>
-    <Container>
-    <Horses/>
-    </Container>
-    <BookingForm/>
-    <Contact/>
-    <Footer/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+        <Route index element={<Hero/>}/>
+        <Route path="home" element={<Hero/>}/>
+        <Route path="bookride" element={<BookRide/>}/>
+        <Route path="bookform" element={<BookingForm/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }

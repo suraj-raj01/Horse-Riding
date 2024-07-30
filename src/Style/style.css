@@ -48,7 +48,7 @@ body{
 }
 #bookride{
     margin-left: 80px;
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 100px;
 }

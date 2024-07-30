@@ -1,12 +1,12 @@
+import {Outlet,Link} from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-const NavBar = () => {
-  return (
-    <>
-      <Container id='navbar'>
+const Layout = () =>{
+    return(
+        <>
         <Navbar expand="lg">
           <Container fluid>
             <Navbar.Brand href="#">HorseRiding</Navbar.Brand>
@@ -17,10 +17,10 @@ const NavBar = () => {
                 style={{ maxHeight: '400px' }}
                 navbarScroll
               >
-                <Nav.Link href="app.jsx">Home</Nav.Link>
-                <Nav.Link href="#addHorse">Book Ride</Nav.Link>
-                <Nav.Link href="#action3">Contact</Nav.Link>
-                <Nav.Link href="#footer">About</Nav.Link>
+                <Nav.Link as={Link} to="home">Home</Nav.Link>
+                <Nav.Link as={Link} to="bookride">Book Ride</Nav.Link>
+                <Nav.Link as={Link} to="bookform">Book Form</Nav.Link>
+                <Nav.Link as={Link} to="about">About</Nav.Link>
               </Nav>
               <Form className="d-flex">
                 <Form.Control
@@ -34,8 +34,10 @@ const NavBar = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </Container>
-    </>
-  )
+        <div>
+            <Outlet/>
+        </div>
+        </>
+    )
 }
-export default NavBar;
+export default Layout;
