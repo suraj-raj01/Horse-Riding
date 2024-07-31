@@ -7,9 +7,9 @@ import Navbar from 'react-bootstrap/Navbar';
 const Layout = () =>{
     return(
         <>
-        <Navbar expand="lg">
+        <Navbar expand="lg" style={{height:'10vh'}}>
           <Container fluid>
-            <Navbar.Brand href="#">HorseRiding</Navbar.Brand>
+            <Navbar.Brand href="#" style={{fontWeight:'bold'}}>HorseRiding</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav

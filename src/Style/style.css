@@ -1,13 +1,6 @@
-#navbar{
-    position: sticky;
-    top: 0px;
-    font-weight: bold;
-    background-color: #dbe8f3;
-    z-index: 10;
-    height: 10vh;
-}
+
 #carousel img{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
 }
 #addHorse{

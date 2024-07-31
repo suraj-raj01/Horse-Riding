@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/esm/Container';
 const Hero = () => {
   return (
     <>
-      <Container>
         <Carousel id='carousel'>
           <Carousel.Item interval={1000}>
             <img src='/Images/h1.jpg' />
@@ -38,7 +37,6 @@ const Hero = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-      </Container>
     </>
   )
 }
